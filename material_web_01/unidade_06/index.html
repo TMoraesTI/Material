@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GRADUAÇÃO</title>
+
+	<!-- Fonts & Icons -->
+	<!--<link rel="icon" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/favicon.ico" type="image/x-icon">-->
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=latin-ext">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize.custom.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize-grid.custom.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize-mq.custom.css">
+	<!-- UIkit -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/uikit.min.css">
+	<!-- Anicollection (animações) -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/anicollection.min.css">
+	<!-- Media Player -->
+    <link rel="stylesheet" href="quiz/css/quiz.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/custom.css">
+    <link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/plyr.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/_colors.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/_components.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/_helper.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/main.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/theme.grd.css">
+	
+	<!--Game-->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/css/custom.game.css">
+	<link rel="stylesheet" href="game/custom.game.css">
+
+</head>
+
+<body id="uni" data-template="grd" class="nav-floating scroll-nav mathjs">
+	<!-- NAVEGAÇÂO FLUTUANTE -->
+	<div id="nav-fab" class="fixed-action-btn direction-bottom nav-fab go g-blue-dark-horizontal transition">
+		
+        <a class="nav-fab-trigger btn btn-floating click-to-toggle br-circle hover">
+			<i class="menu icon small txt-white mdi mdi-menu"></i>
+			<i class="close icon small txt-white mdi mdi-close"></i>
+		</a>
+
+		<ul id="bullet-menu" class="nav-menu" uk-scrollspy-nav>
+			
+            <li class="hidden"><a href="#cover" uk-scroll> Início</a></li>
+			            
+            <li class="nav-link">
+				<a title="Videoaula" href="#cs1" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Videoaula</span>
+							<i class="icon mdi mdi-arrow-right-drop-circle-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Teoria na Prática" href="#cs2" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Teoria na Prática</span>
+							<i class="icon mdi mdi-lightbulb-on-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Capítulo do Livro Didático" href="#cs3" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Capítulo do Livro Didático</span>
+							<i class="icon mdi mdi-book-open-page-variant"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Exercício de Fixação" href="#cs4" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Exercício de Fixação</span>
+							<i class="icon mdi mdi-checkbox-marked-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            
+			<!--RECURSOS DE APRENDIZAGEM-->
+			<li class="nav-link">
+				<a title="Infográfico" href="#cs5" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Infográfico</span>
+							<i class="icon mdi mdi-image-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Mapa Mental" href="#cs6" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Mapa Mental</span>
+							<i class="icon mdi mdi-drawing"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Vídeo Animação" href="#cs7" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Vídeo Animação</span>
+							<i class="icon mdi mdi-video-image"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Tela Animada" href="#cs8" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Tela Animada</span>
+							<i class="icon mdi mdi-youtube-tv"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="EADúvida?" href="#cs9" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>EADúvida?</span>
+							<i class="icon mdi mdi-help-circle-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="quiz" href="#cs13" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Quiz</span>
+							<i class="icon mdi mdi-playlist-edit"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Jogo da Memória" href="#cs14" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Jogo da Memória</span>
+							<i class="icon mdi mdi-view-module"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Caça-Palavras" href="#cs15" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Caça-Palavras</span>
+							<i class="icon mdi mdi-blur-off"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <!--FIM RECURSOS DE APRENDIZAGEM--> 
+            
+            <li class="nav-link">
+				<a title="Além da Sala de Aula" href="#cs10" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Além da Sala de Aula</span>
+							<i class="icon mdi mdi-school-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Podcast" href="#cs11" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Podcast</span>
+							<i class="icon mdi mdi-headphones"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			
+			<li class="nav-link">
+				<a title="Referências" href="#cs12" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Referências</span>
+							<i class="icon mdi mdi-book-open-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            
+		</ul>
+	</div>
+      
+
+	<!--CAPA-->
+	<div id="cover" class="section">
+		<div class="cover-img" data-src="img/cover.jpg" uk-img></div>
+		<!--<div class="cover-overlay"></div>-->
+
+		<div class="cover-title m-txt-grey txt-dark-1">
+			<h1>Correlação e Regressão Linear</h1>
+		</div>
+
+		<a class="scroll-arrow" href="#main-content" uk-scroll>
+			<i class="icon bounce animated infinite mdi mdi-chevron-down"></i>
+		</a>
+	</div>
+
+	<div id="main-content">
+		
+        <!-- VIDEOAULA - CONTENT SECTION 1 -->
+		<div id="cs1" data-cc="on" class="videoaula section valign-wrapper bg-02 bg-center bg-cover bg-fixed go g-blue-light">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-arrow-right-drop-circle-outline mg-s-right m-txt-orange"></i>
+						<span>Videoaula</span>
+					</h2>
+				</div>
+
+				<div class="row txt-white">
+					<div class="col s12 l4">
+						
+						<p>A correlação entre duas variáveis pode ser estudada de diversas maneiras e possuímos várias ferramentas que nos auxiliam a determinar se tal relação realmente existe. Vamos abordar os diagramas de dispersão, o coeficiente de correlação linear de Pearson e a equação de regressão linear simples entre duas variáveis nesta unidade. Nesta videoaula você poderá conhecer um pouco mais sobre esses três conceitos e ainda acompanhar alguns exemplos simples de cada um deles.</p>
+						
+					</div>
+
+					<div class="col s12 l8">
+						<iframe src="https://www.youtube.com/embed/H705t3G4a1k?rel=0" frameborder="0" allowfullscreen width="1920" height="1080" uk-responsive></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!--TEORIA NA PRÁTICA - CONTENT SECTION 2 -->
+		<div id="cs2" data-cc="on" class="teoria-na-pratica section bg-light bg-circles bg-center bg-no-repeat bg-overflow-width bg-fixed bg-right-top mathjs">
+			<div class="container">
+				<div class="section-title dots txt-blue txt-light-2">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-lightbulb-on-outline mg-s-right m-txt-orange"></i>
+						<span>Teoria na Prática</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+						
+						<h4 class="txt-center">Calculando o Coeficiente de Correlação Linear de Pearson</h4>
+
+						<hr class="bd-blue bd-light-2">
+
+						<p>A construção de mais colunas em uma determinada tabela com os valores das observáveis pode ser uma forma mais organizada de se determinar o coeficiente de correlação linear de Pearson. Neste vídeo, você poderá acompanhar a construção de colunas extras em uma tabela, para facilitar o cálculo desse coeficiente tão importante.</p>
+						
+						<p>Existem diversos softwares matemáticos e estatísticos que calculam diversas medidas de posição, de dispersão e até mesmo realizam análises muito ricas a partir de dados simples estruturados em tabelas. É importante conhecer como são calculados tais elementos e, por meio da adição de mais colunas em uma tabela, podemos simplificar e organizar nossos cálculos para determinar o coeficiente de correlação linear de Pearson.</p>
+						
+						<p>Acompanhe, no vídeo a seguir, como você pode organizar sua tabela para obter o coeficiente de Pearson a partir dos dados apresentados.</p>
+						
+						<div class="bx bx-content bx-ghost txt-dark br-5 bd-blue bd-light-2">
+							<p>CORRELAÇÃO de Pearson - Como calcular o coeficiente de correlação de Pearson. <strong>Só números</strong>. Disponível em: <a href="https://www.youtube.com/watch?v=oxypFVGVUfg" target="_blank">https://www.youtube.com/watch?v=oxypFVGVUfg</a>. Acesso em: 18 set. 2021.</p>
+						</div>
+
+						<p>A partir do vídeo, trabalhe com a seguinte tabela, completando as células que estão em branco e, por fim, calculando o coeficiente de correlação de Pearson para esses dados.</p>
+
+						<div class="bx tbl-box">
+							<table class="tbl txt-center">
+								<tbody>
+									<tr>
+										<td>$x$</td>
+										<td>$y$</td>
+										<td>$x-\bar{x}$</td>
+										<td>$y-\bar{y}$</td>
+										<td>$(x-\bar{x})^{2}$</td>
+										<td>$(y-\bar{y})^{2}$</td>
+										<td>$(x-\bar{x}) \cdot(y-\bar{y})$</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>2</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>20</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>16</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>10</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>17</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<p>Qual é o valor do coeficiente de correlação linear de Pearson para esses valores? É possível afirmar que há uma correlação linear entre tais valores?</p>
+						
+					</div>
+				</div>
+                
+			</div>
+		</div>
+
+		<!-- CAPÍTULO DO LIVRO DIDÁTICO - CONTENT SECTION 3 -->
+		<div id="cs3" data-cc="on" class="livro section bg-04 go g-blue bg-cover bg-right">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-book-open-page-variant mg-s-right m-txt-orange"></i>
+						<span>Livro Didático</span>
+					</h2>
+				</div>
+
+				<div class="row txt-white">
+					<div class="col s12 m8 center">
+						<h4 class="txt-center">Faça o download do capítulo desta Unidade</h4>
+
+						<div class="col s12 center txt-center mg-large-bottom">
+							<a href="doc/capitulo-06.pdf" target="_blank" class="btn-large txt-white txt-bold">Baixar Capítulo</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- EXERCÍCIOS - CONTENT SECTION 4 -->
+		<div id="cs4" data-cc="on" class="exercicios section bg-01 bg-center bg-cover bg-fixed go g-blue txt-white">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-checkbox-marked-outline mg-s-right m-txt-orange"></i>
+						<span>Exercícios de Fixação</span>
+					</h2>
+				</div>
+
+				<ul class="questions uk-switcher">
+
+					<!--QUESTÃO 1-->
+					<li id="screen-1" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 1</h4>
+
+							<p>Após realizar o estudo de correlação entre duas variáveis, um pesquisador calculou o coeficiente de correlação de Pearson e obteve o valor de $r$ = -0,872. Avalie as seguintes asserções a respeito da correlação entre as duas variáveis analisadas e a relação proposta entre elas.</p>
+
+							<p>A partir do coeficiente de correlação linear de Pearson calculado pelo pesquisador, é possível que a correlação entre as variáveis seja bem baixa</p>
+
+							<p class="txt-center">PORQUE</p>
+
+							<p>Quanto maior o módulo do valor do coeficiente de correlação linear de Pearson, maior é o grau de correlação entre as variáveis estudadas.</p>
+
+							<p>Acerca das asserções apresentadas, é correto afirmar o seguinte:</p>
+
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>A primeira asserção é verdadeira, e a segunda é falsa.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>A segunda asserção é verdadeira, e a primeira é falsa.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como o módulo do coeficiente de correlação de Pearson é próximo de 1, então a correlação entre as variáveis é alta.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>As duas asserções são falsas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>As duas asserções são verdadeiras, e a segunda é uma justificativa correta da primeira.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>As duas asserções são verdadeiras, mas a segunda não é uma justificativa correta da primeira.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 2-->
+					<li id="screen-2" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 2</h4>
+
+							<p>Considere o seguinte diagrama de dispersão:</p>
+							
+							<p class="txt-center"><img class="responsive-img" src="img/img-ques-01.png"></p>
+							
+							<p>Avalie as afirmações sobre o diagrama de dispersão:</p>
+
+							<p>I. A partir do diagrama de dispersão, é possível inferir que há uma relação linear entre as variáveis apresentadas.<br>
+							II. A relação entre as variáveis é inversamente proporcional.<br>
+							III. A relação entre as variáveis é diretamente proporcional.</p>
+
+							<p>É correto o que se afirma em:</p>
+
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>I e III, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 6.1 - Diagrama de dispersão.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>I, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 6.1 - Diagrama de dispersão.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>II, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 6.1 - Diagrama de dispersão.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>I e II, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>A relação entre as variáveis aparenta ser linear, e é possível afirmar que ela é inversamente proporcional, pois, enquanto uma das variáveis aumenta, a outra diminui.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>III, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 6.1 - Diagrama de dispersão.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 3-->
+					<li id="screen-3" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 3</h4>
+
+							<p>Considere duas variáveis $x$ e $y$ dadas em pares dos quais estamos estudando o grau de correlação. Considerando ainda que são fornecidos $n$ pares de observáveis: $\left(x_{1}, y_{1}\right)$, $\left(x_{2}, y_{2}\right)$, …, $\left(x_{n}, y_{n}\right)$ e sejam $\bar{x}$ e $\bar{y}$ as médias aritméticas de cada uma das variáveis, respectivamente. Assinale a alternativa que apresenta corretamente a definição dos coeficientes angular e linear da reta $y=ax+b$ que melhor aproxima a relação entre as variáveis.</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>$a=\frac{\sum_{i=1}^{n}(y-\bar{y})^{2}}{\sum_{i=1}^{n}(x-\bar{x})^{2}}$ e $b=\bar{x}-a \cdot \bar{y}$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 3 - Equação de regressão.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>$a=\frac{\sum_{i=1}^{n}(x-\bar{x}) \cdot(y-\bar{y})}{\sum_{i=1}^{n}(x-\bar{x})^{2}}$ e $b=\bar{y}-a \cdot \bar{x}$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como apresentado nesta unidade, os coeficientes são determinados pelas fórmulas apresentadas na alternativa.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>$a=\frac{\sum_{i=1}^{n}(x-\bar{x}) \cdot(y-\bar{y})}{\sum_{i=1}^{n} x-\bar{x}}$ e $b=\bar{y}-a \cdot \bar{x}$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 3 - Equação de regressão.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>$a=\frac{\sum_{i=1}^{n}(x-\bar{x}) \cdot(y-\bar{y})}{\sum_{i=1}^{n} x-\bar{x}}$ e $b=\bar{y}+a \cdot \bar{x}$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 3 - Equação de regressão.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>$a=\frac{\sum_{i=1}^{n}(x-\bar{x}) \cdot(y-\bar{y})}{\sum_{i=1}^{n}(x-\bar{x})^{2}}$ e $b=\bar{y}+a \cdot \bar{x}$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 3 - Equação de regressão.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 4-->
+					<li id="screen-4" class="screen row">
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 4</h4>
+
+							<p>Considere a tabela abaixo, na qual foram registrados os valores observados de duas variáveis das quais estamos interessados em analisar uma possível correlação.</p>
+							
+							<div class="bx tbl-box">
+								<table class="tbl txt-center txt-grey">
+								<tbody>
+									<tr>
+										<td>$x$</td>
+										<td>$y$</td>
+										<td>$x-\bar{x}$</td>
+										<td>$y-\bar{y}$</td>
+										<td>$(x-\bar{x})^{2}$</td>
+										<td>$(y-\bar{y})^{2}$</td>
+										<td>$(x-\bar{x}) \cdot(y-\bar{y})$</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>15</td>
+										<td>-2</td>
+										<td>-5</td>
+										<td>4</td>
+										<td>25</td>
+										<td>100</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>17</td>
+										<td>-1</td>
+										<td>-3</td>
+										<td>1</td>
+										<td>(a)</td>
+										<td>9</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>19</td>
+										<td>0</td>
+										<td>-1</td>
+										<td>(b)</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>23</td>
+										<td>1</td>
+										<td>(c)</td>
+										<td>1</td>
+										<td>9</td>
+										<td>9</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>26</td>
+										<td>2</td>
+										<td>6</td>
+										<td>4</td>
+										<td>36</td>
+										<td>(d)</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+							
+							<p>Assinale a alternativa que apresenta corretamente os valores (a), (b), (c) e (d).</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>(a) = 9 <br>
+										(b) = 0<br>
+										(c) = - 3<br>
+										(d) = 144
+										</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>A partir das indicações das colunas é possível calcular os valores que estão indicados.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>(a) = 9 <br>
+										(b) = 3<br>
+										(c) = - 3<br>
+										(d) = 12</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>(a) = 9 <br>
+										(b) = 0<br>
+										(c) = 3<br>
+										(d) = 144</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>(a) = 18 <br>
+										(b) = 0<br>
+										(c) = 0<br>
+										(d) = 22</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>(a) = 9 <br>
+										(b) = - 3<br>
+										(c) = - 3<br>
+										(d) = 12</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 5-->
+					<li id="screen-5" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 5</h4>
+
+							<p>Assinale a alternativa que apresenta corretamente a expressão que determina o coeficiente de correlação linear de Pearson para as variáveis $x$ e $y$ dadas em  pares do tipo $\left(x_{1}, y_{1}\right)$, $\left(x_{2}, y_{2}\right)$, …, $\left(x_{n}, y_{n}\right)$ e considerando $\bar{x}$ e $\bar{y}$ as médias aritméticas de cada uma delas individualmente.</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>$r=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right) \cdot\left(y_{i}-\bar{y}\right)}{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)} \cdot \sqrt{\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)}}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>$r=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right) \cdot\left(y_{i}-\bar{y}\right)}{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2} \cdot \sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)^{2}}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>$r=\frac{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right) \cdot\left(y_{i}-\bar{y}\right)}}{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}} \cdot \sqrt{\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)^{2}}}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>$r=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right) \cdot\left(y_{i}-\bar{y}\right)}{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)} \cdot \sqrt{\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)}}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Seção 2 - Coeficiente de correlação linear de Pearson.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>$r=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right) \cdot\left(y_{i}-\bar{y}\right)}{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}} \cdot \sqrt{\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)^{2}}}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como apresentado nesta unidade, o coeficiente de correlação linear de Pearson é determinado como apresentado na alternativa.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--FEEDBACK-->
+					<li id="screen-6" class="feedback-final screen row">
+						<div class="question-description col s12 m8 l8">
+							<h5>CONCLUSÃO</h5>
+
+							<p><strong>Teste concluído com sucesso!</strong><br>
+								Você fez <span class="tries-txt">15</span> tentativas e acertou <span class="points-txt">5</span>, tendo um aproveitamento de <span class="percent-txt">33.33</span>%.</p>
+						</div>
+						<div class="col s12 m4 l4 uk-inline">
+							<!-- GRAFICO -->
+							<div class="donut-svg center br-circle overflow-hidden">
+								<svg id="d-two-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+									<circle class="circle-svg" r="16" cx="16" cy="16" style="stroke-dasharray: 75 100" />
+								</svg>
+							</div>
+							<div class="txt-center txt-huge txt-white uk-position-center">
+								<span class="percent-txt">100</span>%
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+				<div class="row questions-nav">
+					<dvi class="col s12 m8 l8">
+						<ul class="questions-index uk-subnav" uk-switcher="connect: .questions; active: 0; animation: uk-animation-fade">
+
+							<li class="screen-1" data-item="1" data-correct="b"><a class="pill" href="#">1</a></li>
+							<li class="screen-2 uk-disabled" data-item="2" data-correct="d"><a class="pill" href="#">2</a></li>
+							<li class="screen-3 uk-disabled" data-item="3" data-correct="b"><a class="pill" href="#">3</a></li>
+							<li class="screen-4 uk-disabled" data-item="4" data-correct="a"><a class="pill" href="#">4</a></li>
+							<li class="screen-5 uk-disabled" data-item="5" data-correct="e"><a class="pill" href="#">5</a></li>
+
+							<li class="screen-6 uk-disabled" data-item="6">
+								<a class="pill" href="#">
+									<i class="icon mdi mdi-check-bold"></i>
+								</a>
+							</li>
+						</ul>
+					</dvi>
+					<div class="questions-next col s12 m4 l4">
+						<a class="btn next right opacity-0 transition" href="#">
+							<span>AVANÇAR</span>
+							<i class="icon mdi mdi-arrow-right mg-s-left"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- INFOGRÁFICO - CONTENT SECTION 5 -->
+		<div id="cs5" data-cc="on" class="infografico section">
+			<div class="container">
+				<div class="section-title dots txt-blue txt-light-2">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-image-outline mg-s-right m-txt-orange"></i>
+						<span>Infográfico</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="s12 m11 l9 center">
+                        
+						<p>Neste infográfico, você encontrará as definições dos três principais conceitos apresentados nesta unidade sobre regressão linear. O diagrama de dispersão, o coeficiente de correlação linear de Pearson e a equação de regressão são apresentados de maneira sistematizada, para que você possa fazer uma rápida consulta sobre fórmulas, definições e relações que tais objetos nos fornecem para uma análise estatística.</p>
+                        
+                        <figure class="full-width relative" uk-lightbox uk-scrollspy="cls:uk-animation-fade">
+                            <a href="img/infografico.png"><img class="responsive-img fit-media" src="img/infografico.png"></a>
+                        </figure>
+                        
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- ALÉM DA SALA DE AULA - CONTENT SECTION 10 -->
+		<div id="cs10" data-cc="on" class="saiba-mais section go g-blue-light">
+			<div class="container">
+
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-school-outline mg-s-right m-txt-orange"></i>
+						<span>Além da Sala de Aula</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+
+						<div class="bx bx-content br-5 mg-big-bottom" uk-scrollspy="cls:uk-animation-fade">
+
+							Nesta primeira abordagem sobre o estudo de correlação, temos um breve descritivo do que se trata essa teoria. Existem diferentes tipos de relações que podem existir entre duas ou mais variáveis. No capítulo 7 do livro indicado, abordamos apenas as relações lineares que foram estudadas a partir de diagramas de dispersão. Nas seções 1, 2 e 3 do capítulo sobre correlação, você poderá acompanhar alguns exemplos de diagramas de dispersão e como identificá-los a partir do coeficiente de correlação linear de Pearson.
+
+							<a href="https://integrada.minhabiblioteca.com.br/reader/books/9788521633556/epubcfi/6/28[%3Bvnd.vst.idref%3Dchapter07]!/4" target="_blank" class="btn outside out-br txt-bold">Acesse aqui</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- PODCAST - CONTENT SECTION 11 -->
+		<div id="cs11" data-cc="on" class="podcast section go g-blue-dark">
+			<div class="container">
+
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-headphones mg-s-right m-txt-orange"></i>
+						<span>Podcast</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+
+						<!-- EXEMPLO DE PLAYER DE PODCAST (CARD) + ANIMAÇÃO -->
+						<div class="card cf" uk-scrollspy="cls:uk-animation-slide-top">
+
+							<div class="card-image bg-dot-white bg-svg-small bg-blue bg-dark">
+								<a class="btn btn-large btn-floating halfway-fab waves-effect waves-light bg-orange hover" href="audio/podcast_01.mp3" target="_blank" title="Download do Podcast">
+									<i class="icon mdi mdi-download"></i>
+								</a>
+							</div>
+
+							<div class="card-content">
+
+								<p>O estudo de correlação entre duas variáveis é uma análise complexa e que pode nos auxiliar e compreender relações que, em uma primeira instância, podem não ser tão claras. Vamos revisar os elementos, ferramentas e conceitos apresentados nesta unidade que nos auxiliam no estudo de correlação e regressão linear entre duas variáveis.</p>
+
+							</div>
+
+							<div class="card-action">
+
+								<audio class="js-player" controls>
+									<source src="audio/podcast_01.mp3" type="audio/mp3" />
+									<source src="audio/podcast_01.ogg" type="audio/ogg" />
+									<source src="audio/podcast_01.webm" type="audio/webm" />
+								</audio>
+
+							</div>
+							<!-- EXEMPLO DE TRANSCRIÇÃO DO ÁUDIO - OCULTAR CASO NÃO TENHA CONTEÚDO -->
+							<div class="card-action">
+								<div uk-accordion class="accordion no-margin">
+									<div>
+										<a class="uk-accordion-title bg-transparent txt-cyan txt-hover bd-0 no-margin" href="#">
+											<div class="txt-center center">
+												<i class="icon mdi mdi-text-subject mg-s-right left"></i>
+												<h5 class="txt-bold left">Clicar aqui para ler a Transcrição do Áudio</h5>
+											</div>
+										</a>
+
+										<div class="uk-accordion-content bd-0">											
+									
+											<p>No estudo de correlação entre duas variáveis estamos interessados em saber se há alguma relação entre duas características em um determinado grupo de indivíduos. </p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>Nesta unidade abordamos a correlação linear, onde a relação entre as duas variáveis em questão é modelada por uma reta. Um primeiro recurso que podemos utilizar para identificar tal relação é o diagrama de dispersão.</p>
+
+											<p>A partir de pares de observáveis, podemos construir essa representação gráfica que nos auxilia a visualizar geometricamente se há alguma relação notável entre as variáveis que estamos considerando.</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>Claro que apenas com o diagrama de dispersão a análise de correlação é muito pobre. Existem outras ferramentas que podemos utilizar para classificar e determinar o grau de correlação entre nossas variáveis.</p>
+
+											<p>O coeficiente de correlação linear de Pearson é um dos parâmetros que podemos utilizar para classificar a correlação. Trata-se de um valor entre menos um e um que é calculado a partir das observáveis.</p>
+
+											<p>Quanto maior o módulo do valor do coeficiente de Pearson, maior é o grau de correlação entre as variáveis. O sinal do coeficiente de Pearson indica se a relação entre as variáveis é diretamente ou inversamente proporcional.</p>
+
+											<p>Se o coeficiente for positivo, então as grandezas são diretamente proporcionais, ou seja, quando uma aumenta, a segunda também aumenta. Já se o coeficiente for negativo, então as grandezas são inversamente proporcionais, apresentando um comportamento contrário quanto ao crescimento.</p>
+
+											<p>O cálculo do coeficiente de correlação linear de Pearson envolve diversos cálculos entre cada uma das observáveis, as médias aritméticas de cada uma delas e também o somatório desses valores.</p>
+
+											<p>É importante organizar bem tais informações para que não haja nenhum tipo de erro e que torne mais simples a compreensão de cada passo envolvido no cálculo desse coeficiente.</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>Por fim, estudamos como obter a equação de regressão, também chamada de regressão linear simples, pois envolve apenas duas variáveis. Nessa equação expressamos a reta que melhor aproxima a relação entre as variáveis.</p>
+
+											<p>Trata-se de uma equação da reta cujos coeficientes linear e angular são obtidos a partir do conjunto de observáveis apresentado.</p>
+
+											<p>Tais representações se tornam mais simples e intuitivas quando temos o auxílio de softwares matemáticos e estatísticos que geram automaticamente gráficos ou até mesmo calculam o coeficiente de Pearson a partir de uma coleção de dados.</p>
+
+											<p>Procure um software que atenda às suas necessidades e que seja mais adequado à sua prática. Existem diversos tutoriais que você pode seguir para aprender a manipular tais programas. Bons estudos!</p>
+
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+        
+        <!-- REFERÊNCIAS - CONTENT SECTION 12 -->
+		<div id="cs12" data-cc="on" class="referencias section bg-03 bg-center bg-cover bg-fixed go g-blue-deep">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-book-open-outline mg-s-right m-txt-orange"></i>
+						<span>Referências</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center txt-white">
+						
+						<ul class="ref-content">
+							
+							<li class="ref-text">
+								<div>MATTOS, V.L.D.; AZAMBUJA, A.M.V.; KONRATH, A.C. <strong>Introdução à Estatística</strong>: Aplicações em Ciências Exatas. Rio de Janeiro: LTC, 2017.</div>
+							</li> 
+
+							<li class="ref-video">
+								<div>SÓ NÚMEROS. <strong>Correlação de Pearson</strong> - Como calcular o coeficiente de correlação de Pearson. Disponível em: <a href="https://www.youtube.com/watch?v=oxypFVGVUfg" target="_blank">https://www.youtube.com/watch?v=oxypFVGVUfg</a>. Acesso em: 15 ago. 2021.</div>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- JS -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery-3.4.1.min.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+	<!-- Materialize -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/materialize.min.js"></script>
+	<!-- UIkit -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/uikit.min.js"></script>
+	<!-- Media PLayer (plyr) -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/plyr.polyfilled-3.5.6.min.js"></script>
+
+	<!-- Cover Scroll Trigger -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery.scroll-trigger.min.js"></script>
+	<!-- Scrollify (navegação por scroll) -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery.scrollify.js"></script>
+	
+	<!-- Games -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.helper.js"></script>
+	<!-- - Memory Game -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.memory-game.js"></script>
+	<!-- - Word Search -->
+	<script type="text/javascript" src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/wordfind.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.word-search.js"></script>
+	
+
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/activities.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/main.js"></script>
+    
+    
+</body>
+</html>

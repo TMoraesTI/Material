@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GRADUAÇÃO</title>
+
+	<!-- Fonts & Icons -->
+	<!--<link rel="icon" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/favicon.ico" type="image/x-icon">-->
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=latin-ext">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize.custom.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize-grid.custom.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize-mq.custom.css">
+	<!-- UIkit -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/uikit.min.css">
+	<!-- Anicollection (animações) -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/anicollection.min.css">
+	<!-- Media Player -->
+    <link rel="stylesheet" href="quiz/css/quiz.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/custom.css">
+    <link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/plyr.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/_colors.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/_components.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/_helper.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/main.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/theme.grd.css">
+	
+	<!--Game-->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/css/custom.game.css">
+	<link rel="stylesheet" href="game/custom.game.css">
+
+</head>
+
+<body id="uni" data-template="grd" class="nav-floating scroll-nav mathjs">
+	<!-- NAVEGAÇÂO FLUTUANTE -->
+	<div id="nav-fab" class="fixed-action-btn direction-bottom nav-fab go g-blue-dark-horizontal transition">
+		
+        <a class="nav-fab-trigger btn btn-floating click-to-toggle br-circle hover">
+			<i class="menu icon small txt-white mdi mdi-menu"></i>
+			<i class="close icon small txt-white mdi mdi-close"></i>
+		</a>
+
+		<ul id="bullet-menu" class="nav-menu" uk-scrollspy-nav>
+			
+            <li class="hidden"><a href="#cover" uk-scroll> Início</a></li>
+			            
+            <li class="nav-link">
+				<a title="Videoaula" href="#cs1" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Videoaula</span>
+							<i class="icon mdi mdi-arrow-right-drop-circle-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Teoria na Prática" href="#cs2" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Teoria na Prática</span>
+							<i class="icon mdi mdi-lightbulb-on-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Capítulo do Livro Didático" href="#cs3" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Capítulo do Livro Didático</span>
+							<i class="icon mdi mdi-book-open-page-variant"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Exercício de Fixação" href="#cs4" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Exercício de Fixação</span>
+							<i class="icon mdi mdi-checkbox-marked-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            
+			<!--RECURSOS DE APRENDIZAGEM-->
+			<li class="nav-link">
+				<a title="Infográfico" href="#cs5" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Infográfico</span>
+							<i class="icon mdi mdi-image-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Mapa Mental" href="#cs6" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Mapa Mental</span>
+							<i class="icon mdi mdi-drawing"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Vídeo Animação" href="#cs7" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Vídeo Animação</span>
+							<i class="icon mdi mdi-video-image"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Tela Animada" href="#cs8" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Tela Animada</span>
+							<i class="icon mdi mdi-youtube-tv"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="EADúvida?" href="#cs9" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>EADúvida?</span>
+							<i class="icon mdi mdi-help-circle-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="quiz" href="#cs13" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Quiz</span>
+							<i class="icon mdi mdi-playlist-edit"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Jogo da Memória" href="#cs14" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Jogo da Memória</span>
+							<i class="icon mdi mdi-view-module"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Caça-Palavras" href="#cs15" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Caça-Palavras</span>
+							<i class="icon mdi mdi-blur-off"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <!--FIM RECURSOS DE APRENDIZAGEM--> 
+            
+            <li class="nav-link">
+				<a title="Além da Sala de Aula" href="#cs10" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Além da Sala de Aula</span>
+							<i class="icon mdi mdi-school-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Podcast" href="#cs11" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Podcast</span>
+							<i class="icon mdi mdi-headphones"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			
+			<li class="nav-link">
+				<a title="Referências" href="#cs12" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Referências</span>
+							<i class="icon mdi mdi-book-open-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            
+		</ul>
+	</div>
+      
+
+	<!--CAPA-->
+	<div id="cover" class="section">
+		<div class="cover-img" data-src="img/cover.jpg" uk-img></div>
+		<!--<div class="cover-overlay"></div>-->
+
+		<div class="cover-title m-txt-grey txt-dark-1">
+			<h1>Probabilidade condicionada e Teorema de Bayes</h1>
+		</div>
+
+		<a class="scroll-arrow" href="#main-content" uk-scroll>
+			<i class="icon bounce animated infinite mdi mdi-chevron-down"></i>
+		</a>
+	</div>
+
+	<div id="main-content">
+		
+        <!-- VIDEOAULA - CONTENT SECTION 1 -->
+		<div id="cs1" data-cc="on" class="videoaula section valign-wrapper bg-02 bg-center bg-cover bg-fixed go g-blue-light">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-arrow-right-drop-circle-outline mg-s-right m-txt-orange"></i>
+						<span>Videoaula</span>
+					</h2>
+				</div>
+
+				<div class="row txt-white">
+					<div class="col s12 l4">
+						
+						<p>Continuando nossos estudos dentro da Teoria das Probabilidades, vamos explorar as probabilidades condicionadas que partem do pressuposto da ocorrência de um evento e estuda a implicação disso sobre a probabilidade de outro evento. Veremos também o Teorema de Bayes que auxilia na compreensão e pode facilitar o cálculo de uma probabilidade condicionada.</p>
+						
+					</div>
+
+					<div class="col s12 l8">
+						<!--<iframe src="https://www.youtube.com/embed/YfnM6GHmGdY?rel=0" frameborder="0" allowfullscreen width="1920" height="1080" uk-responsive></iframe>-->
+						<iframe src="https://www.youtube.com/embed/SJlaD_dlvqs?rel=0" frameborder="0" allowfullscreen width="1920" height="1080" uk-responsive></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!--TEORIA NA PRÁTICA - CONTENT SECTION 2 -->
+		<div id="cs2" data-cc="on" class="teoria-na-pratica section bg-light bg-circles bg-center bg-no-repeat bg-overflow-width bg-fixed bg-right-top mathjs">
+			<div class="container">
+				<div class="section-title dots txt-blue txt-light-2">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-lightbulb-on-outline mg-s-right m-txt-orange"></i>
+						<span>Teoria na Prática</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+						
+						<h4 class="txt-center">Exemplos de Probabilidade Condicional</h4>
+
+						<hr class="bd-blue bd-light-2">
+
+						<p>O conceito de probabilidade condicional é bastante intuitivo e possui diversas aplicações distintas. Aqui, você poderá conhecer alguns exemplos com formulações simples que podem ser resolvidos utilizando as probabilidades condicionais. Essa é uma ótima forma de compreender o conceito base por trás dessa definição e fixar a definição clássica de como calcular essa probabilidade.</p>
+						
+						<p>A probabilidade condicional estuda como a ocorrência de um evento influencia a probabilidade de ocorrência de um outro evento. Formalmente, temos que: dados dois eventos $A, B \subset S$, a probabilidade condicional de $A$ dado $B$ é</p>
+						
+						<p class="txt-center">$P(A \mid B)=\frac{P(A \cap B)}{P(B)}, (P(B) \neq 0)$.</p>
+						
+						<p>Isso significa que estamos calculando a probabilidade de ocorrência do evento $A$ sabendo que o evento $B$ ocorreu.</p>
+						
+						<p>Considere um baralho com 52 cartas, divididas em 4 naipes com o mesmo número de cartas: copas (♥), ouros (♦), paus (♣) e espadas (♠). Em cada naipe, existem 13 cartas divididas da seguinte forma: 10 cartas numeradas de 1 a 10, sendo que a carta 1 é representada pela letra A e é chamada de “ás”; as outras três cartas restantes de cada naipe são o valete (J), a rainha (Q) e o rei (K). Supondo que a chance de se sortear uma carta, ao acaso, seja igual para todas as cartas, temos que a probabilidade de sortear uma carta do naipe de paus (♣) é</p>
+						
+						<p class="txt-center">$P(\boldsymbol{♣})=\frac{13}{52}=\frac{1}{4}$.</p>
+						
+						<p>As cartas do baralho têm as cores vermelha e preta, de acordo com as indicações apresentadas acima. Dessa forma, a probabilidade de sortearmos uma carta preta é dada por</p>
+						
+						<p class="txt-center">$P(⬛)=\frac{26}{52}=\frac{1}{2}$.</p>
+						
+						<p>Logo, podemos calcular a probabilidade condicional de sortear uma carta do naipe de paus (♣) sabendo que sorteamos uma carta preta. Essa probabilidade é calculada como sendo</p>
+						
+						<p class="txt-center">$P(\boldsymbol{♣} \mid \boldsymbol{⬛})=\frac{P(\boldsymbol{♣} \cap \boldsymbol{⬛})}{P(\boldsymbol{⬛})}=\frac{1 / 4}{1 / 2}=\frac{1}{2}$</p>
+						
+						<p>O vídeo a seguir traz mais exemplos do cálculo de probabilidades condicionais a partir de exemplos simples.</p>
+						
+						<div class="txt-center mg-m-bottom">
+							<a href="https://www.youtube.com/watch?v=WlUgwydaLcw" target="_blank" class="btn-large txt-white txt-bold">Acesse aqui</a>
+						</div>
+						
+						<p>Em quais outras situações podemos utilizar a probabilidade condicional para calcular as chances de obtermos determinados resultados em um experimento probabilístico? Considerando o exemplo do baralho de cartas, calcule mais probabilidades condicionais para praticar esse conceito e sua definição.</p>
+
+						
+						
+					</div>
+				</div>
+                
+			</div>
+		</div>
+
+		<!-- CAPÍTULO DO LIVRO DIDÁTICO - CONTENT SECTION 3 -->
+		<div id="cs3" data-cc="on" class="livro section bg-04 go g-blue bg-cover bg-right">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-book-open-page-variant mg-s-right m-txt-orange"></i>
+						<span>Livro Didático</span>
+					</h2>
+				</div>
+
+				<div class="row txt-white">
+					<div class="col s12 m8 center">
+						<h4 class="txt-center">Faça o download do capítulo desta Unidade</h4>
+
+						<div class="col s12 center txt-center mg-large-bottom">
+							<a href="doc/capitulo-08.pdf" target="_blank" class="btn-large txt-white txt-bold">Baixar Capítulo</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- EXERCÍCIOS - CONTENT SECTION 4 -->
+		<div id="cs4" data-cc="on" class="exercicios section bg-01 bg-center bg-cover bg-fixed go g-blue txt-white">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-checkbox-marked-outline mg-s-right m-txt-orange"></i>
+						<span>Exercícios de Fixação</span>
+					</h2>
+				</div>
+
+				<ul class="questions uk-switcher">
+
+					<!--QUESTÃO 1-->
+					<li id="screen-1" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 1</h4>
+
+							<p>Considere o lançamento de dois dados honestos de seis faces. Sabendo que o resultado de ambas as faces é um número par, aponte qual a probabilidade de a soma das faces ser maior ou igual a 8:</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>$\frac{1}{2}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>$\frac{2}{3}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Se considerarmos $A=\{(2,6) ;(4,4) ;(4,6) ;(6,2) ;(6,4) ;(6,6)\}$ e $B=\{(2,2) ;(2,4) ;(2,6) ;(4,2) ;(4,4) ;(4,6) ;(6,2) ;(6,4) ;(6,6)\}$, então $P(A \mid B)=\frac{6 / 36}{9 / 36}=\frac{2}{3}$.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>$\frac{3}{4}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>$\frac{1}{3}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>$\frac{1}{4}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 2-->
+					<li id="screen-2" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 2</h4>
+
+							<p>Considere o lançamento de dois dados honestos de seis faces. Sabendo que a soma das faces voltadas para cima é igual a 9, aponte qual a probabilidade de que uma das faces seja igual a 4:</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>$\frac{1}{2}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Considerando $A=\{(5,4) ;(4,5)\}$ e $B=\{(4,5) ;(5,4) ;(3,6) ;(6,3)\}$, obtemos que $P(A \mid B)=\frac{2 / 36}{4 / 36}=\frac{1}{2}$.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>1</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>$\frac{3}{4}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>$\frac{2}{3}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>0</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 3-->
+					<li id="screen-3" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 3</h4>
+
+							<p>Assinale a alternativa que apresenta corretamente a definição da probabilidade condicional do evento $A$ dado $B$, onde $A, B \subset S$ e $P(B) \neq 0$.</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>$P(A \mid B)=\frac{P(A \cap B)}{P(B)}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como apresentado nesta unidade, a definição clássica de probabilidade condicional é a apresentada na alternativa.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>$P(A \mid B)=\frac{P(A \cup B)}{P(B)}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico  Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>$P(A \mid B)=\frac{P(A)}{P(B)}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico  Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>$P(A \mid B)=\frac{P(A)}{P(A \cap B)}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico  Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>$P(A \mid B)=\frac{P(B)}{P(A)}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico  Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 4-->
+					<li id="screen-4" class="screen row">
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 4</h4>
+
+							<p>Assinale a alternativa que apresenta corretamente a Regra de Bayes para probabilidades condicionais envolvendo os eventos $A, B \subset S$.</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>$P(A \mid B)=\frac{P(B \mid A) \cdot P(A)}{P(B)}$, $P(B) \neq 0$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como apresentado nesta unidade, a Regra de Bayes ou Teorema de Bayes estabelece a relação apresentada na alternativa para as probabilidades condicionais.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>$P(A \mid B)=\frac{P(B \mid A) \cdot P(B)}{P(A)}$, $P(A) \neq 0$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Teorema de Bayes.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>$P(A \mid B)=\frac{P(B \mid A) \cdot P(A \cap B)}{P(B)}$, $P(B) \neq 0$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Teorema de Bayes.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>$P(A \mid B)=\frac{P(B \mid A) \cdot P(A)}{P(A \cup B)}$, $P(A \cup B) \neq 0$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Teorema de Bayes.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>$P(A \mid B)=\frac{P(B \mid A) \cdot P(A)}{P(A \cap B)}$, $P(A \cap B) \neq 0$.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Teorema de Bayes.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 5-->
+					<li id="screen-5" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 5</h4>
+
+							<p>Considerando a definição de probabilidade condicional apresentada nesta unidade, avalie as seguintes asserções e a relação proposta entre elas:</p>
+
+							<p>Considerando um dado honesto de seis faces, a probabilidade condicional de obter a face 2 voltada para cima, sabemos que o evento de uma face par obtido é igual a $\frac{1}{6}$</p>
+
+							<p class="txt-center">PORQUE</p>
+							
+							<p>O evento de obter uma face par pode ser representado por $B=\{2,4,6\}$ e o evento de obter a face 2 pode ser representado por $A=\{2\}$.</p>
+
+							<p>Sobre as asserções apresentadas, é correto afirmar:</p>
+
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>A primeira asserção é verdadeira, mas a segunda é falsa.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>A segunda asserção é verdadeira, mas a primeira é falsa.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Na verdade, a probabilidade condicional neste caso é igual a $\frac{1}{3}$. Basta considerar os eventos como apresentados na segunda asserção.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>As duas asserções são falsas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>As duas asserções são verdadeiras e a segunda é uma justificativa correta da primeira.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>As duas asserções são verdadeiras, mas a segunda não é uma justificativa correta da primeira.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Probabilidade condicionada.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--FEEDBACK-->
+					<li id="screen-6" class="feedback-final screen row">
+						<div class="question-description col s12 m8 l8">
+							<h5>CONCLUSÃO</h5>
+
+							<p><strong>Teste concluído com sucesso!</strong><br>
+								Você fez <span class="tries-txt">15</span> tentativas e acertou <span class="points-txt">5</span>, tendo um aproveitamento de <span class="percent-txt">33.33</span>%.</p>
+						</div>
+						<div class="col s12 m4 l4 uk-inline">
+							<!-- GRAFICO -->
+							<div class="donut-svg center br-circle overflow-hidden">
+								<svg id="d-two-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+									<circle class="circle-svg" r="16" cx="16" cy="16" style="stroke-dasharray: 75 100" />
+								</svg>
+							</div>
+							<div class="txt-center txt-huge txt-white uk-position-center">
+								<span class="percent-txt">100</span>%
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+				<div class="row questions-nav">
+					<dvi class="col s12 m8 l8">
+						<ul class="questions-index uk-subnav" uk-switcher="connect: .questions; active: 0; animation: uk-animation-fade">
+
+							<li class="screen-1" data-item="1" data-correct="b"><a class="pill" href="#">1</a></li>
+							<li class="screen-2 uk-disabled" data-item="2" data-correct="a"><a class="pill" href="#">2</a></li>
+							<li class="screen-3 uk-disabled" data-item="3" data-correct="a"><a class="pill" href="#">3</a></li>
+							<li class="screen-4 uk-disabled" data-item="4" data-correct="a"><a class="pill" href="#">4</a></li>
+							<li class="screen-5 uk-disabled" data-item="5" data-correct="b"><a class="pill" href="#">5</a></li>
+
+							<li class="screen-6 uk-disabled" data-item="6">
+								<a class="pill" href="#">
+									<i class="icon mdi mdi-check-bold"></i>
+								</a>
+							</li>
+						</ul>
+					</dvi>
+					<div class="questions-next col s12 m4 l4">
+						<a class="btn next right opacity-0 transition" href="#">
+							<span>AVANÇAR</span>
+							<i class="icon mdi mdi-arrow-right mg-s-left"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- INFOGRÁFICO - CONTENT SECTION 5 -->
+		<div id="cs5" data-cc="on" class="infografico section">
+			<div class="container">
+				<div class="section-title dots txt-blue txt-light-2">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-image-outline mg-s-right m-txt-orange"></i>
+						<span>Infográfico</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="s12 m11 l9 center">
+                        
+						<p>As probabilidades condicionais têm uma interpretação bastante intuitiva e sua definição clássica pode ser facilmente inferida dessa interpretação. Reunimos neste infográfico a definição clássica de probabilidade condicional e os principais resultados apresentados neste capítulo. Essa é uma forma fácil e estruturada de consultar todas as principais ferramentas introduzidas nesta unidade.</p>
+                        
+                        <figure class="full-width relative" uk-lightbox uk-scrollspy="cls:uk-animation-fade">
+                            <a href="img/infografico.png"><img class="responsive-img fit-media" src="img/infografico.png"></a>
+                        </figure>
+                        
+					</div>
+                    
+                    
+
+				</div>
+			</div>
+		</div>
+		
+		<!-- ALÉM DA SALA DE AULA - CONTENT SECTION 10 -->
+		<div id="cs10" data-cc="on" class="saiba-mais section go g-blue-light">
+			<div class="container">
+
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-school-outline mg-s-right m-txt-orange"></i>
+						<span>Além da Sala de Aula</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+					
+						<div class="bx bx-content br-5 mg-big-bottom" uk-scrollspy="cls:uk-animation-fade">
+
+							<p>Neste vídeo, você poderá acompanhar a definição de probabilidade condicional a partir de uma interpretação bastante intuitiva. Serão apresentados exemplos comentados que facilitam a fixação do conceito. Além disso, duas diferentes formas de calcular uma probabilidade condicional são apresentadas e, assim, você poderá optar pela forma de calcular esse tipo de probabilidade da maneira mais adequada para você.</p>
+
+							<a href="https://www.youtube.com/watch?v=uo16XTg2CIQ" target="_blank" class="btn outside out-br txt-bold">Acesse aqui</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- PODCAST - CONTENT SECTION 11 -->
+		<div id="cs11" data-cc="on" class="podcast section go g-blue-dark">
+			<div class="container">
+
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-headphones mg-s-right m-txt-orange"></i>
+						<span>Podcast</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+
+						<!-- EXEMPLO DE PLAYER DE PODCAST (CARD) + ANIMAÇÃO -->
+						<div class="card cf" uk-scrollspy="cls:uk-animation-slide-top">
+
+							<div class="card-image bg-dot-white bg-svg-small bg-blue bg-dark">
+								<a class="btn btn-large btn-floating halfway-fab waves-effect waves-light bg-orange hover" href="audio/podcast_01.mp3" target="_blank" title="Download do Podcast">
+									<i class="icon mdi mdi-download"></i>
+								</a>
+							</div>
+
+							<div class="card-content">
+
+								<p>No último podcast da disciplina de Estatística e Probabilidade, vamos explorar a definição de probabilidade condicional e suas implicações. Trabalharemos com alguns exemplos simples para ilustrar a definição intuitiva desse conceito e também vamos relembrar a relação estabelecida no Teorema de Bayes para probabilidades condicionais.</p>
+
+							</div>
+
+							<div class="card-action">
+
+								<audio class="js-player" controls>
+									<source src="audio/podcast_01.mp3" type="audio/mp3" />
+									<source src="audio/podcast_01.ogg" type="audio/ogg" />
+									<source src="audio/podcast_01.webm" type="audio/webm" />
+								</audio>
+
+							</div>
+							<!-- EXEMPLO DE TRANSCRIÇÃO DO ÁUDIO - OCULTAR CASO NÃO TENHA CONTEÚDO -->
+							<div class="card-action">
+								<div uk-accordion class="accordion no-margin">
+									<div>
+										<a class="uk-accordion-title bg-transparent txt-cyan txt-hover bd-0 no-margin" href="#">
+											<div class="txt-center center">
+												<i class="icon mdi mdi-text-subject mg-s-right left"></i>
+												<h5 class="txt-bold left">Clicar aqui para ler a Transcrição do Áudio</h5>
+											</div>
+										</a>
+
+										<div class="uk-accordion-content bd-0">
+											
+											<p>Nesta unidade estudamos as probabilidades condicionais que estudam a influência da ocorrência de um evento sobre a probabilidade de ocorrência de outro.</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>Vamos revisar os principais aspectos dessa definição, alguns exemplos simples e as principais propriedades e resultados que foram abordados nesta unidade.</p>
+
+											<p>A probabilidade condicional de um evento A dado um evento B pode ser calculada como o quociente da probabilidade de A interseção B sobre a probabilidade de B.</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>Para compreender essa definição de maneira mais intuitiva, vamos recorrer ao exemplo clássico de experimento probabilístico do lançamento de um dado de seis faces.</p>
+
+											<p>Sabendo que obtemos uma face ímpar, qual será a probabilidade de que tenhamos obtido uma face maior ou igual a 3? O evento B neste caso são as faces ímpares, ou seja, 1, 3 e 5.</p>
+
+											<p>O evento A são os resultados 3, 4, 5 e 6. A interseção entre A e B é o conjunto formado pelas faces 3 e 5. A probabilidade de B é igual a 1/2 (meio) e a probabilidade de A interseção B é igual a 1/3 (um terço).</p>
+
+											<p>Portanto a probabilidade condicional de A dado B é igual a um terço dividido por meio, ou seja, dois terços. Há uma probabilidade de dois terços de que a face obtida após um lançamento seja maior ou igual a 3 dado que obtemos uma face ímpar.</p>
+
+											<p>As probabilidades condicionais são bastante intuitivas e existem diversos exemplos simples que podemos obter com combinações de eventos de um mesmo experimento probabilístico.</p>
+
+											<p>Um importante resultado envolvendo esse tipo de probabilidade é o Teorema de Bayes. Dados dois eventos A e B de um mesmo espaço amostral S, vale a seguinte relação:</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>A probabilidade condicional de A dado B é igual a probabilidade condicional de B dado A vezes a probabilidade de A sobre a probabilidade de B.</p>
+
+											<p>Essa relação nos permite enxergar a relação entre a probabilidade condicional de A dado B e a probabilidade condicional de B dado A. Tais probabilidades não são iguais!</p>
+
+											<p>Retome alguns exemplos apresentados nesta unidade e calcule as probabilidades condicionais de tais exemplos utilizando o Teorema de Bayes.</p>
+
+											<p>Procure também em outras bibliografias mais exemplos de diferentes experimentos probabilísticos e o cálculo das probabilidades em cada um deles. Bons estudos!</p>
+
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+        
+        <!-- REFERÊNCIAS - CONTENT SECTION 12 -->
+		<div id="cs12" data-cc="on" class="referencias section bg-03 bg-center bg-cover bg-fixed go g-blue-deep">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-book-open-outline mg-s-right m-txt-orange"></i>
+						<span>Referências</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center txt-white">
+						
+						<ul class="ref-content">
+							
+							<li class="ref-video">
+								<div>PROBABILIDADE Condicional: rápido e fácil. <strong>Dicas de Mat Sandro Curió</strong>. Disponível em: <a href="https://www.youtube.com/watch?v=WlUgwydaLcw" target="_blank">https://www.youtube.com/watch?v=WlUgwydaLcw</a>. Acesso em: 16 set. 2021.</div>
+							</li>
+
+							<li class="ref-video">
+								<div>PROBABILIDADE Condicional. <strong>Equaciona com Paulo Pereira</strong>. Disponível em: <a href="https://www.youtube.com/watch?v=uo16XTg2CIQ" target="_blank">https://www.youtube.com/watch?v=uo16XTg2CIQ</a>. Acesso em: 16 set. 2021.</div>
+							</li>
+						
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- JS -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery-3.4.1.min.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+	<!-- Materialize -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/materialize.min.js"></script>
+	<!-- UIkit -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/uikit.min.js"></script>
+	<!-- Media PLayer (plyr) -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/plyr.polyfilled-3.5.6.min.js"></script>
+
+	<!-- Cover Scroll Trigger -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery.scroll-trigger.min.js"></script>
+	<!-- Scrollify (navegação por scroll) -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery.scrollify.js"></script>
+	
+	<!-- Games -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.helper.js"></script>
+	<!-- - Memory Game -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.memory-game.js"></script>
+	<!-- - Word Search -->
+	<script type="text/javascript" src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/wordfind.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.word-search.js"></script>
+	
+
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/activities.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/main.js"></script>
+    
+    
+</body>
+</html>

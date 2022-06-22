@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GRADUAÇÃO</title>
+
+	<!-- Fonts & Icons -->
+	<!--<link rel="icon" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/favicon.ico" type="image/x-icon">-->
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=latin-ext">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize.custom.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize-grid.custom.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/materialize-mq.custom.css">
+	<!-- UIkit -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/uikit.min.css">
+	<!-- Anicollection (animações) -->
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/anicollection.min.css">
+	<!-- Media Player -->
+    <link rel="stylesheet" href="quiz/css/quiz.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/custom.css">
+    <link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/vendor/plyr.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/_colors.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/_components.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/css/_helper.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/main.css">
+	<link rel="stylesheet" href="https://nead.unigranrio.edu.br/material_web/base/2020/V4.2/css/theme.grd.css">
+	
+
+</head>
+
+<body id="uni" data-template="grd" class="nav-floating scroll-nav mathjs">
+	<!-- NAVEGAÇÂO FLUTUANTE -->
+	<div id="nav-fab" class="fixed-action-btn direction-bottom nav-fab go g-blue-dark-horizontal transition">
+		
+        <a class="nav-fab-trigger btn btn-floating click-to-toggle br-circle hover">
+			<i class="menu icon small txt-white mdi mdi-menu"></i>
+			<i class="close icon small txt-white mdi mdi-close"></i>
+		</a>
+
+		<ul id="bullet-menu" class="nav-menu" uk-scrollspy-nav>
+			
+            <li class="hidden"><a href="#cover" uk-scroll> Início</a></li>
+			            
+            <li class="nav-link">
+				<a title="Videoaula" href="#cs1" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Videoaula</span>
+							<i class="icon mdi mdi-arrow-right-drop-circle-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Teoria na Prática" href="#cs2" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Teoria na Prática</span>
+							<i class="icon mdi mdi-lightbulb-on-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Capítulo do Livro Didático" href="#cs3" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Capítulo do Livro Didático</span>
+							<i class="icon mdi mdi-book-open-page-variant"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Exercício de Fixação" href="#cs4" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Exercício de Fixação</span>
+							<i class="icon mdi mdi-checkbox-marked-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            
+			<!--RECURSOS DE APRENDIZAGEM-->
+			<li class="nav-link">
+				<a title="Infográfico" href="#cs5" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Infográfico</span>
+							<i class="icon mdi mdi-image-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Mapa Mental" href="#cs6" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Mapa Mental</span>
+							<i class="icon mdi mdi-drawing"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Vídeo Animação" href="#cs7" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Vídeo Animação</span>
+							<i class="icon mdi mdi-video-image"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Tela Animada" href="#cs8" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Tela Animada</span>
+							<i class="icon mdi mdi-youtube-tv"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="EADúvida?" href="#cs9" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>EADúvida?</span>
+							<i class="icon mdi mdi-help-circle-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="quiz" href="#cs13" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Quiz</span>
+							<i class="icon mdi mdi-playlist-edit"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Jogo da Memória" href="#cs14" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Jogo da Memória</span>
+							<i class="icon mdi mdi-view-module"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <li class="nav-link">
+				<a title="Caça-Palavras" href="#cs15" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Caça-Palavras</span>
+							<i class="icon mdi mdi-blur-off"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            <!--FIM RECURSOS DE APRENDIZAGEM--> 
+            
+            <li class="nav-link">
+				<a title="Além da Sala de Aula" href="#cs10" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Além da Sala de Aula</span>
+							<i class="icon mdi mdi-school-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			<li class="nav-link">
+				<a title="Podcast" href="#cs11" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Podcast</span>
+							<i class="icon mdi mdi-headphones"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+			
+			<li class="nav-link">
+				<a title="Referências" href="#cs12" uk-scroll>
+					<span class="btn-floating">
+						<div class="fab-title">
+							<span>Referências</span>
+							<i class="icon mdi mdi-book-open-outline"></i>
+						</div>
+					</span>
+				</a>
+			</li>
+            
+		</ul>
+	</div>
+      
+
+	<!--CAPA-->
+	<div id="cover" class="section">
+		<div class="cover-img" data-src="img/cover.jpg" uk-img></div>
+		<!--<div class="cover-overlay"></div>-->
+
+		<div class="cover-title m-txt-grey txt-dark-1">
+			<h1>Medidas de Assimetria e Curtose</h1>
+		</div>
+
+		<a class="scroll-arrow" href="#main-content" uk-scroll>
+			<i class="icon bounce animated infinite mdi mdi-chevron-down"></i>
+		</a>
+	</div>
+
+	<div id="main-content">
+		
+        <!-- VIDEOAULA - CONTENT SECTION 1 -->
+		<div id="cs1" data-cc="on" class="videoaula section valign-wrapper bg-02 bg-center bg-cover bg-fixed go g-blue-light">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-arrow-right-drop-circle-outline mg-s-right m-txt-orange"></i>
+						<span>Videoaula</span>
+					</h2>
+				</div>
+
+				<div class="row txt-white">
+					<div class="col s12 l4">
+						
+						<p>Outro ponto importante ao analisarmos a distribuição de frequências de uma variável faz referência a simetria da curva em torno da média. Vamos apresentar alguns coeficientes de assimetria que auxiliam a identificar se há um deslocamento da moda em relação a média. Trataremos também da curtose que indica o grau de achatamento da distribuição e, por consequência, influenciando no espectro da variável.</p>
+						
+					</div>
+
+					<div class="col s12 l8">
+						<iframe src="https://www.youtube.com/embed/iMB6Ak9GZf8?rel=0" frameborder="0" allowfullscreen width="1920" height="1080" uk-responsive></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!--TEORIA NA PRÁTICA - CONTENT SECTION 2 -->
+		<div id="cs2" data-cc="on" class="teoria-na-pratica section bg-grey bg-light bg-circles bg-center bg-no-repeat bg-overflow-width bg-fixed bg-right-top mathjs">
+			<div class="container">
+				<div class="section-title dots txt-blue txt-light-2">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-lightbulb-on-outline mg-s-right m-txt-orange"></i>
+						<span>Teoria na Prática</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+						
+						<h4 class="txt-center">Coeficiente de Assimetria de Pearson</h4>
+
+						<hr class="bd-blue bd-light-2">
+
+						<p>O conceito de assimetria dentro de uma distribuição de frequências de uma variável tem uma interpretação bastante intuitiva quando traçamos a curva que descreve essa distribuição. Para dados tabelados, podemos recorrer ao coeficiente de assimetria de Pearson para estimar e determinar se há de fato um comportamento assimétrico na nossa distribuição. Vamos revisar o conceito de assimetria e do coeficiente de assimetria de Pearson com alguns exemplos.</p>
+						
+						<p>Ao representarmos uma distribuição de frequências em um histograma em que o eixo horizontal está centrado na média aritmética, podemos observar se há um comportamento assimétrico nessa distribuição. Tal comportamento ocorre quando a moda se difere de maneira considerável da média.</p>
+
+						<p>Neste primeiro vídeo, temos a definição de assimetria e também como classificá-la a partir das medidas de posição, sem precisar recorrer à representação gráfica.</p>
+						
+						<div class="bx bx-content br-5 mg-big-bottom bx-shadow-1" uk-scrollspy="cls:uk-animation-fade">
+							
+							<p>ASSIMETRIA estatística. <strong>Prof. Murakami</strong>. Acesso em: 18 set. 2021.</p>
+
+							<a href="https://www.youtube.com/watch?v=G0vF8Ansz-k" target="_blank" class="btn outside out-br">Acesse aqui</a>
+						</div>
+						
+						<div class="bx bx-content br-5 mg-big-bottom bx-shadow-1" uk-scrollspy="cls:uk-animation-fade">
+							
+							<p>No segundo vídeo, também do mesmo canal, temos alguns exemplos do cálculo do coeficiente de assimetria de Pearson, mais especificamente do segundo coeficiente. COEFICIENTE de assimetria de Pearson. <strong>Prof. Murakami</strong>. Acesso em: 18 set. 2021.</p>
+
+
+							<a href="https://www.youtube.com/watch?v=2ejUpHnMVNg" target="_blank" class="btn outside out-br">Acesse aqui</a>
+						</div>
+
+						<p>A partir de exemplos simples, como os apresentados no segundo vídeo, podemos ter uma compreensão mais abrangente do que o coeficiente de Pearson significa. Na videoaula, outros coeficientes de assimetria foram apresentados. Uma análise desses dois coeficientes para os exemplos apresentados aqui também revela a mesma conclusão obtida pelo coeficiente de Pearson.</p>
+
+						<p>Tente calcular os coeficientes de Yule e de Kelley para os exemplos apresentados no segundo vídeo e compare os seus resultados com o coeficiente de Pearson. Caso tenha alguma dúvida para calcular as separatrizes necessárias para obter esses dois coeficientes de assimetria, consulte o livro de Mattos, Azambuja e Konrath (2017) ou assista ao vídeo indicado.</p>
+
+						<div class="bx bx-content br-5 mg-big-bottom bx-shadow-1" uk-scrollspy="cls:uk-animation-fade">
+							
+							<p>1º, 2º e 3º quartil: estatística. <strong>Prof. Murakami</strong>. Acesso em: 18 set. 2021.</p>
+
+							<a href="https://www.youtube.com/watch?v=ie2few5B7ZU" target="_blank" class="btn outside out-br">Acesse aqui</a>
+						</div>
+						
+						
+					</div>
+				</div>
+
+                
+			</div>
+		</div>
+
+		<!-- CAPÍTULO DO LIVRO DIDÁTICO - CONTENT SECTION 3 -->
+		<div id="cs3" data-cc="on" class="livro section bg-04 go g-blue bg-cover bg-right">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-book-open-page-variant mg-s-right m-txt-orange"></i>
+						<span>Livro Didático</span>
+					</h2>
+				</div>
+
+				<div class="row txt-white">
+					<div class="col s12 m8 center">
+						<h4 class="txt-center">Faça o download do capítulo desta Unidade</h4>
+
+						<div class="col s12 center txt-center mg-large-bottom">
+							<a href="doc/capitulo-05.pdf" target="_blank" class="btn-large txt-white txt-bold">Baixar Capítulo</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- EXERCÍCIOS - CONTENT SECTION 4 -->
+		<div id="cs4" data-cc="on" class="exercicios section bg-01 bg-center bg-cover bg-fixed go g-blue txt-white">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-checkbox-marked-outline mg-s-right m-txt-orange"></i>
+						<span>Exercícios de Fixação</span>
+					</h2>
+				</div>
+
+				<ul class="questions uk-switcher">
+
+					<!--QUESTÃO 1-->
+					<li id="screen-1" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 1</h4>
+
+							<p>O momento de ordem $r \in \mathbb{Z}$ ($r>0$) da coleção X é definido como sendo</p>
+
+							<p class="txt-center">$m_{X}(r)=\frac{x_{1}^{r}+x_{2}^{r}+\ldots+x_{n}^{r}}{n}=\frac{\sum_{i=1}^{n} x_{i}^{r}}{n}$.</p>
+
+							<p>Considerando a seguinte coleção de dados:</p>
+							
+							<p class="txt-center txt-big"><strong>X&nbsp;&nbsp;=&nbsp;&nbsp;2&nbsp;&nbsp;6&nbsp;&nbsp;5&nbsp;&nbsp;3&nbsp;&nbsp;7&nbsp;&nbsp;3</strong>,</p>
+							
+							<p>assinale a alternativa que apresenta corretamente o valor de $m_{X}(2)$.</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>21.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>20.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>19.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>22.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>$m_{X}(2)=\frac{4+36+25+9+49+9}{6}=\frac{132}{6}=22$</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>23.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 2-->
+					<li id="screen-2" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 2</h4>
+
+							<p>Assinale a alternativa que apresenta corretamente a fórmula do momento de ordem 3 centrado na origem 1 para a coleção</p>
+							
+							<p class="txt-center">$X=\begin{array}{lll}x_{1} & x_{2} & \ldots & x_{n}\end{array}$.</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>$m_{X}(3,1)=\frac{\sum_{i=1}^{n}\left(x_{i}-1\right)^{3}}{n}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como apresentado neste capítulo, o momento de ordem r centrado na origem a é dado por  $m_{X}(r, a)=\frac{\sum_{i=1}^{n}\left(x_{i}-a\right)^{r}}{n}$.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>$m_{X}(3,1)=\frac{\sum_{i=1}^{n} 3\left(x_{i}-1\right)}{n}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>$m_{X}(3,1)=\frac{\sum_{i=1}^{n} x_{i}^{3}}{n}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>$m_{X}(3,1)=\frac{\sum_{i=1}^{n}\left(x_{i}+1\right)^{3}}{n}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>$m_{X}(3,1)=\frac{\sum_{i=1}^{n} 3 x_{i}}{n}$</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 3-->
+					<li id="screen-3" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 3</h4>
+
+							<p>Ao estudarmos os momentos de uma coleção de observáveis, é possível perceber que o momento de ordem 1 de uma coleção X é igual __________ da coleção X. Se $\bar{X}$ é a média aritmética da coleção X, então tomamos o momento de ordem 1 centrado na origem $\bar{X}$ é igual a __________, e o momento de ordem 2 centrado na origem $\bar{X}$ é igual a __________.</p>
+
+							<p>Assinale a alternativa que apresenta corretamente e em ordem as expressões que completam as lacunas.</p>
+
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>moda; zero; mediana.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>média aritmética; mediana; moda.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>média aritmética; mediana; zero.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>média aritmética; zero; variância.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Com base nas expressões dos momentos, podemos concluir que as definições são equivalentes nos casos citados no enunciado.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>mediana; média aritmética; variância.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 4-->
+					<li id="screen-4" class="screen row">
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 4</h4>
+
+							<p>Considere uma coleção de observáveis $X$ tal que o coeficiente de curtose por momentos é $b(X)=3,854$. Avalie as seguintes afirmações sobre a coleção $X$.</p>
+
+							<p>I. A curva da distribuição de frequências da coleção $X$ pode ser caracterizada como leptocúrtica.<br>
+							II. A moda da coleção $X$ é maior que a média aritmética da coleção $X$.<br>
+							III. A curva da distribuição de frequências da coleção $X$ pode ser caracterizada como platicúrtica.</p>
+
+							<p>É correto o que se afirma em:</p>
+
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>I, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Curtose.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>II, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Curtose.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>I e II, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Curtose.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>II e III, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Curtose.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>III, apenas.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como a curva é platicúrtica, segundo o critério apresentado no capítulo do livro didático, ela não pode ser leptocúrtica. Com relação à moda e à mediana, isso só pode ser afirmado se soubermos da assimetria da distribuição.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--QUESTÃO 5-->
+					<li id="screen-5" class="screen row">
+
+						<div class="question-description col s12 m12 l6">
+
+							<h4>QUESTÃO 5</h4>
+
+							<p>Considere a seguinte coleção de observáveis:</p>
+							
+							<p class="txt-center txt-big"><strong>X&nbsp;&nbsp;=&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;5&nbsp;&nbsp;5&nbsp;&nbsp;5</strong></p>
+							
+							<p>Assinale a alternativa que apresenta corretamente o valor do primeiro coeficiente de assimetria de Pearson para essa coleção X. Considere $\sqrt{1,6} \approx 1,265$.</p>
+
+						</div>
+
+						<ul class="alternatives col s12 m12 l6" uk-accordion>
+
+							<li class="alt alt-1 br-5" data-a="a">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">A</span></div>
+									<span>- 0,79.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Como a fórmula do primeiro coeficiente de assimetria de Pearson é $a_{P}=\frac{\bar{X}-X_{\bmod a}}{d p(X)}$, calculando as medidas de posição e o desvio padrão da coleção, chegamos ao resultado apresentado na alternativa.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-2 br-5" data-a="b">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">B</span></div>
+									<span>0,79.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-3 br-5" data-a="c">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">C</span></div>
+									<span>1,23.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-4 br-5" data-a="d">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">D</span></div>
+									<span>- 1,23.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+							<li class="alt alt-5 br-5" data-a="e">
+
+								<a class="alt-title uk-accordion-title" href="#">
+									<div class="letter"><span class="pill bg-cyan bg-dark txt-white">E</span></div>
+									<span>0.</span>
+								</a>
+
+								<div class="alt-feedback uk-accordion-content">
+									<p>Tópico Assimetria.</p>
+								</div>
+
+							</li>
+
+						</ul>
+					</li>
+
+					<!--FEEDBACK-->
+					<li id="screen-6" class="feedback-final screen row">
+						<div class="question-description col s12 m8 l8">
+							<h5>CONCLUSÃO</h5>
+
+							<p><strong>Teste concluído com sucesso!</strong><br>
+								Você fez <span class="tries-txt">15</span> tentativas e acertou <span class="points-txt">5</span>, tendo um aproveitamento de <span class="percent-txt">33.33</span>%.</p>
+						</div>
+						<div class="col s12 m4 l4 uk-inline">
+							<!-- GRAFICO -->
+							<div class="donut-svg center br-circle overflow-hidden">
+								<svg id="d-two-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+									<circle class="circle-svg" r="16" cx="16" cy="16" style="stroke-dasharray: 75 100" />
+								</svg>
+							</div>
+							<div class="txt-center txt-huge txt-white uk-position-center">
+								<span class="percent-txt">100</span>%
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+				<div class="row questions-nav">
+					<dvi class="col s12 m8 l8">
+						<ul class="questions-index uk-subnav" uk-switcher="connect: .questions; active: 0; animation: uk-animation-fade">
+
+							<li class="screen-1" data-item="1" data-correct="d"><a class="pill" href="#">1</a></li>
+							<li class="screen-2 uk-disabled" data-item="2" data-correct="a"><a class="pill" href="#">2</a></li>
+							<li class="screen-3 uk-disabled" data-item="3" data-correct="d"><a class="pill" href="#">3</a></li>
+							<li class="screen-4 uk-disabled" data-item="4" data-correct="e"><a class="pill" href="#">4</a></li>
+							<li class="screen-5 uk-disabled" data-item="5" data-correct="a"><a class="pill" href="#">5</a></li>
+
+							<li class="screen-6 uk-disabled" data-item="6">
+								<a class="pill" href="#">
+									<i class="icon mdi mdi-check-bold"></i>
+								</a>
+							</li>
+						</ul>
+					</dvi>
+					<div class="questions-next col s12 m4 l4">
+						<a class="btn next right opacity-0 transition" href="#">
+							<span>AVANÇAR</span>
+							<i class="icon mdi mdi-arrow-right mg-s-left"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!--QUIZ-->        
+        <div id="cs13" data-cc="on" class="quiz section bg-quiz bg-center bg-cover bg-fixed go cyan-light">
+			<div class="container">
+				<div class="section-title dots">
+					<h2 class="title-text txt-blue txt-light-2">
+						<i class="icon mdi mdi-playlist-edit mg-s-right m-txt-orange"></i>
+						<span>Quiz</span>
+					</h2>
+				</div>
+                
+                <div class="row">
+					<div class="col s12 m11 l9 center">
+					
+						<p>Neste quiz, revisaremos a fórmula dos principais coeficientes apresentados nesta unidade. Em cada questão, teremos um coeficiente de assimetria ou de curtose mantendo as notações apresentadas nesta unidade. Cada um desses coeficientes nos auxiliam a compreender o comportamento de uma distribuição de frequências quanto a sua assimetria ou quanto ao seu achatamento.</p> 
+                        
+                        <div class="txt-center">
+							<a href="quiz/index.html" target="_blank" class="btn-large txt-white txt-bold">Acesse aqui</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- ALÉM DA SALA DE AULA - CONTENT SECTION 10 -->
+		<div id="cs10" data-cc="on" class="saiba-mais section go g-blue-light">
+			<div class="container">
+
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-school-outline mg-s-right m-txt-orange"></i>
+						<span>Além da Sala de Aula</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+				
+						<div class="bx bx-content br-5 mg-big-bottom" uk-scrollspy="cls:uk-animation-fade">
+
+							<p>Um dos conceitos que trabalhamos nesta unidade foi a curtose, que classifica o grau de achatamento de uma distribuição de frequências. Neste vídeo, você poderá retomar a definição desse conceito e do coeficiente de curtose calculado a partir de momentos, além de conferir alguns exemplos comentados para ilustrar a interpretação do coeficiente de curtose para algumas distribuições.</p>
+
+							<a href="https://www.youtube.com/watch?v=r7dNIXkwuPM" target="_blank" class="btn outside out-br txt-bold">Acesse aqui</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- PODCAST - CONTENT SECTION 11 -->
+		<div id="cs11" data-cc="on" class="podcast section go g-blue-dark">
+			<div class="container">
+
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-headphones mg-s-right m-txt-orange"></i>
+						<span>Podcast</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center">
+
+						<!-- EXEMPLO DE PLAYER DE PODCAST (CARD) + ANIMAÇÃO -->
+						<div class="card cf" uk-scrollspy="cls:uk-animation-slide-top">
+
+							<div class="card-image bg-dot-white bg-svg-small bg-blue bg-dark">
+								<a class="btn btn-large btn-floating halfway-fab waves-effect waves-light bg-orange hover" href="audio/podcast_01.mp3" target="_blank" title="Download do Podcast">
+									<i class="icon mdi mdi-download"></i>
+								</a>
+							</div>
+
+							<div class="card-content">
+
+								<p>Nesta unidade trabalhamos com os conceitos de assimetria e curtose de uma distribuição de frequências. Caracterizamos essas propriedades graficamente e também por meio de coeficientes que podem ser calculados utilizando os conceitos de medidas de posição, medidas de dispersão e também dos momentos, que foram definidos neste capítulo. Neste podcast você poderá revisar esses conceitos e relembrar suas principais características.</p>
+
+							</div>
+
+							<div class="card-action">
+
+								<audio class="js-player" controls>
+									<source src="audio/podcast_01.mp3" type="audio/mp3" />
+									<source src="audio/podcast_01.ogg" type="audio/ogg" />
+									<source src="audio/podcast_01.webm" type="audio/webm" />
+								</audio>
+
+							</div>
+							<!-- EXEMPLO DE TRANSCRIÇÃO DO ÁUDIO - OCULTAR CASO NÃO TENHA CONTEÚDO -->
+							<div class="card-action">
+								<div uk-accordion class="accordion no-margin">
+									<div>
+										<a class="uk-accordion-title bg-transparent txt-cyan txt-hover bd-0 no-margin" href="#">
+											<div class="txt-center center">
+												<i class="icon mdi mdi-text-subject mg-s-right left"></i>
+												<h5 class="txt-bold left">Clicar aqui para ler a Transcrição do Áudio</h5>
+											</div>
+										</a>
+
+										<div class="uk-accordion-content bd-0">
+											
+											<p>Existem diversas formas de caracterizamos uma distribuição de frequências de um determinado conjunto de dados e nesta unidade estudamos sobre a assimetria e a curtose de uma distribuição.</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>A assimetria está relacionada com o deslocamento do pico da frequência em relação a média aritmética do conjunto. Em um histograma centrado na média podemos perceber a assimetria pelo deslocamento do ponto mais alto da curva de frequências à direita ou à esquerda.</p>
+
+											<p>Se o ponto mais alto da curva de distribuição de frequências está deslocado para a direita, isso significa que a moda do conjunto é maior que o valor da média e, portanto, essa distribuição é chamada de assimétrica negativa.</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>No caso do ponto mais alto da curva de distribuição de frequências estar deslocado para a esquerda, então a moda do conjunto é menor que a média e a distribuição é assimétrica positiva.</p>
+
+											<p>Um dos coeficientes de assimetria apresentados nesta unidade é o coeficiente de Pearson que é baseado justamente nesta diferença entre a mediana e a moda.</p>
+
+											<p>Trabalhamos também com os coeficientes de Yule e Kelley que utilizam as separatrizes para avaliar o grau de assimetria de uma distribuição.</p>
+
+											<p>Por fim, abordamos o conceito de curtose que está relacionado com o achatamento da curva de distribuição de frequências. Quanto mais achatada a curva, maior é a variabilidade entre os valores que a variável assume.</p>
+
+											<p>Essa análise é baseada na comparação entre a frequência de cada uma das ocorrências das observáveis. No caso contrário, temos um pico dentro das frequências causando uma menor variabilidade nos valores que as observáveis assumem.</p>
+
+											<p>Uma distribuição que tem grande achatamento é chamada de platicúrtica, enquanto que uma distribuição que tem pouco achatamento e apresenta um pico de frequência é chamada de leptocúrtica.</p>
+
+											<hr class="s6 center bd-blue bd-light-2">
+
+											<p>As distribuições que possuem uma relação moderada entre seu grau de achatamento e o espectro de valores que são observados é chamada de mesocúrtica.</p>
+
+											<p>Assim como no caso da assimetria, trabalhamos também com coeficientes de curtose que nos permitem caracterizar uma distribuição sem a necessidade do recurso gráfico.</p>
+
+											<p>Um desses coeficientes é o coeficiente de curtose calculado por meio de momentos. Os momentos também foram explorados nesta unidade e eles possuem relação com a média aritmética e a variação de um conjunto.</p>
+
+											<p>Se for preciso, retome as definições formais de todos os coeficientes de assimetria e curtose e também as definições dos momentos que foram apresentadas no seu livro didático. Bons estudos!</p>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+        
+        <!-- REFERÊNCIAS - CONTENT SECTION 12 -->
+		<div id="cs12" data-cc="on" class="referencias section bg-03 bg-center bg-cover bg-fixed go g-blue-deep">
+			<div class="container">
+				<div class="section-title dots txt-white">
+					<h2 class="title-text">
+						<i class="icon mdi mdi-book-open-outline mg-s-right m-txt-orange"></i>
+						<span>Referências</span>
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m11 l9 center txt-white">
+						
+						<ul class="ref-content">
+							
+							<li class="ref-video">
+								<div>A CIÊNCIA DA ESTATÍSTICA. <strong>Coeficiente de curtose</strong>: para que serve e como calculá-lo? Disponível em: <a href="https://www.youtube.com/watch?v=r7dNIXkwuPM" target="_blank">https://www.youtube.com/watch?v=r7dNIXkwuPM</a>. Acesso em: 28 Jul. 2021.</div>
+							</li>
+
+							<li class="ref-text">
+								<div>MATTOS, V.L.D.; AZAMBUJA, A.M.V.; KONRATH, A.C. <strong>Introdução à Estatística</strong>: Aplicações em Ciências Exatas. Rio de Janeiro: LTC, 2017. </div>
+							</li>
+
+							<li class="ref-video">
+								<div>PROFESSOR MURAKAMI - MATEMÁTICA RAPIDOLA. <strong>1º, 2º e 3º quartil</strong>. Disponível em: <a href="https://www.youtube.com/watch?v=ie2few5B7ZU" target="_blank">https://www.youtube.com/watch?v=ie2few5B7ZU</a>. Acesso em: 28 Jul. 2021.</div>
+							</li>
+
+							<li class="ref-video">
+								<div>PROFESSOR MURAKAMI - MATEMÁTICA RAPIDOLA. <strong>Coeficiente de assimetria de Pearson</strong>. Disponível em: <a href="https://www.youtube.com/watch?v=2ejUpHnMVNg" target="_blank">https://www.youtube.com/watch?v=2ejUpHnMVNg</a>. Acesso em: 28 Jul. 2021.</div>
+							</li>
+
+							<li class="ref-video">
+								<div>PROFESSOR MURAKAMI - MATEMÁTICA RAPIDOLA.  <strong>Assimetria estatística</strong>. Disponível em: <a href="https://www.youtube.com/watch?v=G0vF8Ansz-k" target="_blank">https://www.youtube.com/watch?v=G0vF8Ansz-k</a>. Acesso em: 28 Jul. 2021.</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- JS -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery-3.4.1.min.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+	<!-- Materialize -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/materialize.min.js"></script>
+	<!-- UIkit -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/uikit.min.js"></script>
+	<!-- Media PLayer (plyr) -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/plyr.polyfilled-3.5.6.min.js"></script>
+
+	<!-- Cover Scroll Trigger -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery.scroll-trigger.min.js"></script>
+	<!-- Scrollify (navegação por scroll) -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/vendor/jquery.scrollify.js"></script>
+	
+	<!-- Games -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.helper.js"></script>
+	<!-- - Memory Game -->
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.memory-game.js"></script>
+	<!-- - Word Search -->
+	<script type="text/javascript" src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/wordfind.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2021/recursos-game/js/game.word-search.js"></script>
+	
+
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/activities.js"></script>
+	<script src="https://nead.unigranrio.edu.br/material_web/base/2020/v3.7/js/main.js"></script>
+    
+    
+</body>
+</html>
